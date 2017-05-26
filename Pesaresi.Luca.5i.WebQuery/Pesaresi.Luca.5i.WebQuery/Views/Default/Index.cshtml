@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Web Query - Luca Pesaresi - 5i";
+}
+
+           
+<h2>Inserisci una query</h2>
+
+@using (Html.BeginForm("Query", "Default", FormMethod.Post))
+{
+   @Html.TextBox("input", "select * from Aziende")
+   <input type="submit" value="vai" />
+}          
+</br>
+
+@using (Html.BeginForm("Query", "Default", FormMethod.Post))
+{
+    @Html.TextBox("input", "select * from Dipendenti")
+    <input type="submit" value="vai" />
+}
+</br>
+@using (Html.BeginForm("Query", "Default", FormMethod.Post))
+{
+    @Html.TextBox("input", "select * from Province")
+    <input type="submit" value="vai" />
+}
+</br>
+@using (Html.BeginForm("Query", "Default", FormMethod.Post))
+{
+    @Html.TextBox("input", "select * from Qualifiche")
+    <input type="submit" value="vai" />
+}
